@@ -1,0 +1,43 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F8"/>
+  <rect x="190" y="54" width="1360" height="792" rx="22" fill="white" stroke="#E5E7EB"/>
+  <text x="220" y="95" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">钱包</text>
+  <rect x="220" y="120" width="1280" height="108" rx="14" fill="#F9FAFB" stroke="#E5E7EB"/>
+  <text x="250" y="165" font-family="Inter, Arial, sans-serif" font-size="16" fill="#6B7280">当前余额</text>
+  <text x="250" y="200" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#111827">¥2</text>
+  <text x="700" y="165" font-family="Inter, Arial, sans-serif" font-size="16" fill="#6B7280">总用量</text>
+  <text x="700" y="200" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#111827">¥0</text>
+  <text x="1120" y="165" font-family="Inter, Arial, sans-serif" font-size="16" fill="#6B7280">API 请求</text>
+  <text x="1120" y="200" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700" fill="#111827">0</text>
+  <rect x="220" y="260" width="1280" height="500" rx="18" fill="white" stroke="#E5E7EB"/>
+  <text x="260" y="310" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">添加资金</text>
+  <text x="260" y="340" font-family="Inter, Arial, sans-serif" font-size="16" fill="#6B7280">选择金额和支付方式</text>
+  <line x1="220" y1="370" x2="1500" y2="370" stroke="#E5E7EB"/>
+  <text x="250" y="410" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#4B5563">选择充值额度</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="250" y="430" width="290" height="70" rx="10" fill="#F3F4F6"/>
+    <text x="270" y="465" font-size="24" font-weight="700" fill="#111827">10</text>
+    <text x="270" y="490" font-size="15" fill="#6B7280">Pay 10</text>
+    <rect x="560" y="430" width="290" height="70" rx="10" fill="#F3F4F6"/>
+    <text x="580" y="465" font-size="24" font-weight="700" fill="#111827">20</text>
+    <text x="580" y="490" font-size="15" fill="#6B7280">Pay 20</text>
+    <rect x="870" y="430" width="290" height="70" rx="10" fill="#F3F4F6"/>
+    <text x="890" y="465" font-size="24" font-weight="700" fill="#111827">50</text>
+    <text x="890" y="490" font-size="15" fill="#6B7280">Pay 50</text>
+    <rect x="1180" y="430" width="290" height="70" rx="10" fill="#F3F4F6"/>
+    <text x="1200" y="465" font-size="24" font-weight="700" fill="#111827">100</text>
+    <text x="1200" y="490" font-size="15" fill="#6B7280">Pay 100</text>
+  </g>
+  <text x="250" y="565" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#4B5563">自定义额度</text>
+  <rect x="250" y="585" width="1010" height="44" rx="10" fill="white" stroke="#D1D5DB"/>
+  <text x="265" y="613" font-family="Inter, Arial, sans-serif" font-size="16" fill="#111827">1</text>
+  <rect x="1280" y="585" width="190" height="44" rx="10" fill="#F9FAFB" stroke="#D1D5DB"/>
+  <text x="1300" y="613" font-family="Inter, Arial, sans-serif" font-size="16" fill="#6B7280">实付金额：</text>
+  <text x="1440" y="613" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">1</text>
+  <text x="250" y="680" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#4B5563">付款方式</text>
+  <rect x="250" y="700" width="390" height="46" rx="10" fill="#F9FAFB" stroke="#D1D5DB"/>
+  <rect x="265" y="711" width="24" height="24" rx="5" fill="#1677FF"/>
+  <text x="305" y="730" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#111827">支付宝</text>
+  <rect x="12" y="390" width="168" height="36" rx="10" fill="#E8F2FF"/>
+  <text x="45" y="414" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#1677FF">钱包</text>
+</svg>

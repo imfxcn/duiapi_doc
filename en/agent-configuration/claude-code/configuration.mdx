@@ -1,0 +1,121 @@
+---
+title: "Configuration guide"
+description: "Configure Claude Code to use DUIAPI"
+---
+
+Manual configuration is useful when you want to edit Claude Code's configuration file directly. After configuration, Claude Code sends model requests through DUIAPI.
+
+<Tabs>
+  <Tab title="Windows">
+    ## 1. Open the configuration directory
+
+    Press **Win + R**, enter the following path, and press Enter:
+
+    ```text
+    %userprofile%\.claude
+    ```
+
+    If `settings.json` does not exist, create it and open it.
+
+    ## 2. Write settings.json
+
+    <Tip>
+      Replace `<API_KEY>` with your API key, such as `sk-xxxxxx`. Replace `<MODEL>` with the model you use, such as `qwen3.7-max`.
+    </Tip>
+
+    Write the following content to `settings.json`:
+
+    ```json
+    {
+      "env": {
+        "ANTHROPIC_AUTH_TOKEN": "<API_KEY>",
+        "ANTHROPIC_BASE_URL": "https://www.duiapi.com",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "<MODEL>",
+        "ANTHROPIC_MODEL": "<MODEL>",
+        "CLAUDE_CODE_SUBAGENT_MODEL": "<MODEL>"
+      },
+      "includeCoAuthoredBy": false
+    }
+    ```
+
+    ## 3. Test the configuration
+
+    Save `settings.json`, then run:
+
+    ```bash
+    claude
+    ```
+
+    Send a test message after the chat UI opens. If Claude Code replies, the configuration works.
+  </Tab>
+
+  <Tab title="macOS">
+    ## 1. Open the configuration directory
+
+    Run:
+
+    ```bash
+    mkdir -p ~/.claude
+    cd ~/.claude
+    ```
+
+    If `settings.json` does not exist, create it and open it:
+
+    ```bash
+    touch settings.json
+    open -a TextEdit settings.json
+    ```
+
+    ## 2. Write settings.json
+
+    <Tip>
+      Replace `<API_KEY>` with your API key, such as `sk-xxxxxx`. Replace `<MODEL>` with the model you use, such as `qwen3.7-max`.
+    </Tip>
+
+    Write the same `settings.json` content shown in the Windows tab.
+
+    ## 3. Test the configuration
+
+    Save `settings.json`, then run:
+
+    ```bash
+    claude
+    ```
+  </Tab>
+
+  <Tab title="Linux">
+    ## 1. Open the configuration directory
+
+    Run:
+
+    ```bash
+    mkdir -p ~/.claude
+    cd ~/.claude
+    ```
+
+    If `settings.json` does not exist, create it and open it:
+
+    ```bash
+    touch settings.json
+    nano settings.json
+    ```
+
+    ## 2. Write settings.json
+
+    <Tip>
+      Replace `<API_KEY>` with your API key, such as `sk-xxxxxx`. Replace `<MODEL>` with the model you use, such as `qwen3.7-max`.
+    </Tip>
+
+    Write the same `settings.json` content shown in the Windows tab.
+
+    ## 3. Test the configuration
+
+    Save `settings.json`, then run:
+
+    ```bash
+    claude
+    ```
+  </Tab>
+</Tabs>

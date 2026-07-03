@@ -1,0 +1,59 @@
+---
+title: "Claude CLI installation"
+description: "Install Claude Code CLI"
+---
+
+Claude Code CLI requires Node.js and npm. After installation, run `claude` at least once so Claude Code creates its configuration files in your user directory.
+
+## 1. Check Node.js
+
+Run the following commands in Windows Terminal, macOS Terminal, or a Linux shell:
+
+```bash
+node --version
+npm --version
+```
+
+If version numbers appear, Node.js and npm are installed.
+
+You can also check globally installed npm packages:
+
+```bash
+npm list -g --depth=0
+```
+
+If the terminal shows `command not found`, or cannot display version numbers, install Node.js first. You can refer to the [Node.js installation guide](https://www.runoob.com/nodejs/nodejs-install-setup.html), then run the checks again.
+
+<Tip>
+  We recommend installing the Node.js LTS version. After installation, reopen your terminal and run `node --version` and `npm --version`.
+</Tip>
+
+## 2. Install Claude Code CLI
+
+After Node.js is available, install Claude Code globally:
+
+```bash
+npm install -g @anthropic-ai/claude-code@latest
+```
+
+Check the installed version:
+
+```bash
+claude --version
+```
+
+If a version number appears, the CLI is installed.
+
+## 3. Initialize Claude Code
+
+Run Claude Code once after installation:
+
+```bash
+claude
+```
+
+This step is important. Claude Code creates its configuration directory and files in your user directory. These files are needed later when configuring the DUIAPI base URL, model, and API key.
+
+If an interactive screen opens, or you see login, model, or configuration prompts, Claude Code started successfully.
+
+![Claude Code started successfully](/images/claude-cli-started.svg)

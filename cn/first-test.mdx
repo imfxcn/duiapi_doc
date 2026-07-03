@@ -1,0 +1,110 @@
+---
+title: "第一次测试"
+description: "发起第一个请求"
+---
+
+完成 API 密钥生成后，您可以通过简单请求测试接口是否可用。
+
+## 接口地址
+
+```http
+POST https://www.duiapi.com/v1/messages
+```
+
+## 鉴权和模型选择
+
+在请求头中带上 `x-api-key` 并填写测试模型。
+
+```http
+<API_KEY> 请更换为您的 API 密钥，例如 sk-xxxxxx
+<MODEL> 请更换为您测试的模型，例如 qwen3.7-max
+```
+
+## 请求示例
+
+<CodeGroup>
+```bash cURL
+curl -sS 'https://www.duiapi.com/v1/messages' \
+  -X POST \
+  -H 'content-type: application/json' \
+  -H 'x-api-key: <API_KEY>' \
+  -H 'anthropic-version: 2023-06-01' \
+  -H 'anthropic-dangerous-direct-browser-access: true' \
+  --data-binary '{
+    "model": "<MODEL>",
+    "max_tokens": 64,
+    "messages": [
+      {
+        "role": "user",
+        "content": "just say hello world"
+      }
+    ]
+  }'
+```
+
+```javascript Node.js
+const apiKey = "<API_KEY>";
+const model = "<MODEL>";
+
+const response = await fetch("https://www.duiapi.com/v1/messages", {
+  method: "POST",
+  headers: {
+    "content-type": "application/json",
+    "x-api-key": apiKey,
+    "anthropic-version": "2023-06-01",
+    "anthropic-dangerous-direct-browser-access": "true",
+  },
+  body: JSON.stringify({
+    model,
+    max_tokens: 64,
+    messages: [{ role: "user", content: "just say hello world" }],
+  }),
+});
+
+const data = await response.json();
+console.log(data);
+```
+
+```python Python
+import requests
+
+api_key = "<API_KEY>"
+model = "<MODEL>"
+
+response = requests.post(
+    "https://www.duiapi.com/v1/messages",
+    headers={
+        "content-type": "application/json",
+        "x-api-key": api_key,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true",
+    },
+    json={
+        "model": model,
+        "max_tokens": 64,
+        "messages": [{"role": "user", "content": "just say hello world"}],
+    },
+    timeout=30,
+)
+
+print(response.json())
+```
+</CodeGroup>
+
+## 常见错误与处理
+
+| HTTP 状态码 | 原因 | 处理方式 |
+| --- | --- | --- |
+| `401` | 密钥无效、已被禁用或已过期 | 检查 `x-api-key` 头，或重新创建令牌 |
+| `400 insufficient_user_quota` | 账户余额或令牌额度不足 | 前往充值 |
+| `400 model_not_found` | 模型不存在，或不在该令牌/分组可用范围内 | 在模型广场确认模型 ID 与分组 |
+| `429` | 触发限速 | 做指数退避重试，或降低并发 |
+
+错误响应体里的 `type` 与 `code` 字段携带了更细的错误分类，建议在客户端按这两个字段做分支处理，而不是只解析 `message` 文案。
+
+## 下一步
+
+跑通了一次请求之后，可以继续探索：
+
+- [通过 Agent 接入大模型](/cn/agent-configuration/introduction)
+- [通过 API 接入大模型](/cn/api-reference/introduction)

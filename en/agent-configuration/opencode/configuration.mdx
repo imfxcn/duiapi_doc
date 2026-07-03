@@ -1,0 +1,96 @@
+---
+title: "Configuration guide"
+description: "Configure OpenCode to use DUIAPI"
+---
+
+OpenCode uses `opencode.json` for model and endpoint configuration. Put this configuration in the global config file so OpenCode uses DUIAPI by default.
+
+<Tabs>
+  <Tab title="Windows">
+    ## 1. Open the configuration directory
+
+    Press **Win + R**, enter the following path, and press Enter:
+
+    ```text
+    %userprofile%\.config\opencode
+    ```
+
+    If the directory does not exist, create it. If `opencode.json` does not exist, create and open it.
+
+    ## 2. Write opencode.json
+
+    <Tip>
+      Replace `<API_KEY>` with your API key, such as `sk-xxxxxx`. Replace model names with the models you use.
+    </Tip>
+
+    ```json
+    {
+      "models": {
+        "deepseek-v4-pro": {
+          "name": "deepseek-v4-pro"
+        },
+        "glm-5.2": {
+          "name": "glm-5.2"
+        },
+        "qwen3.7-max": {
+          "name": "qwen3.7-max"
+        }
+      },
+      "npm": "@ai-sdk/anthropic",
+      "options": {
+        "apiKey": "<API_KEY>",
+        "baseURL": "https://www.duiapi.com/v1",
+        "setCacheKey": true
+      }
+    }
+    ```
+
+    ## 3. Test the configuration
+
+    ```bash
+    opencode
+    ```
+  </Tab>
+
+  <Tab title="macOS">
+    ## 1. Open the configuration directory
+
+    ```bash
+    mkdir -p ~/.config/opencode
+    cd ~/.config/opencode
+    touch opencode.json
+    open -a TextEdit opencode.json
+    ```
+
+    ## 2. Write opencode.json
+
+    Use the same `opencode.json` content shown in the Windows tab.
+
+    ## 3. Test the configuration
+
+    ```bash
+    opencode
+    ```
+  </Tab>
+
+  <Tab title="Linux">
+    ## 1. Open the configuration directory
+
+    ```bash
+    mkdir -p ~/.config/opencode
+    cd ~/.config/opencode
+    touch opencode.json
+    nano opencode.json
+    ```
+
+    ## 2. Write opencode.json
+
+    Use the same `opencode.json` content shown in the Windows tab.
+
+    ## 3. Test the configuration
+
+    ```bash
+    opencode
+    ```
+  </Tab>
+</Tabs>

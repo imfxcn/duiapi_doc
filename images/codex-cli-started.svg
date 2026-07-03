@@ -1,0 +1,22 @@
+<svg width="980" height="520" viewBox="0 0 980 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="520" fill="#F3F4F6"/>
+  <rect x="12" y="10" width="956" height="500" rx="6" fill="#0B0B0C" stroke="#D1D5DB"/>
+  <rect x="12" y="10" width="956" height="30" rx="6" fill="#F9FAFB"/>
+  <text x="28" y="30" font-family="Consolas, Menlo, monospace" font-size="14" fill="#111827">C:\WINDOWS\system32\cmd.exe</text>
+  <text x="22" y="66" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">Microsoft Windows [Version 10.0.19045.6466]</text>
+  <text x="22" y="88" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">(c) Microsoft Corporation. All rights reserved.</text>
+  <text x="22" y="125" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">C:\Users\you&gt;codex</text>
+  <rect x="22" y="140" width="450" height="80" rx="4" stroke="#CBD5E1"/>
+  <text x="42" y="165" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">&gt;_ OpenAI Codex (v0.63.0)</text>
+  <text x="42" y="195" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">model:</text>
+  <text x="125" y="195" font-family="Consolas, Menlo, monospace" font-size="14" fill="#BFDBFE">qwen3.7-max</text>
+  <text x="42" y="215" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">directory: ~</text>
+  <text x="22" y="265" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">To get started, describe a task or try one of these commands:</text>
+  <text x="22" y="300" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">/init - create an AGENTS.md file with instructions for Codex</text>
+  <text x="22" y="322" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">/status - show current session configuration</text>
+  <text x="22" y="344" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">/approvals - choose what Codex can do without approval</text>
+  <text x="22" y="366" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">/model - choose what model and reasoning effort to use</text>
+  <text x="22" y="388" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">/review - review any changes and find issues</text>
+  <text x="22" y="430" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">&gt; Summarize recent commits</text>
+  <text x="22" y="465" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">100% context left · ? for shortcuts</text>
+</svg>

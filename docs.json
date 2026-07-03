@@ -1,66 +1,169 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Duiapi docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#111827",
+    "light": "#6B7280",
+    "dark": "#111827"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Overview",
+            "pages": [
+              {
+                "group": "Get started",
+                "pages": [
+                  "en/register",
+                  "en/recharge",
+                  "en/api-key",
+                  "en/first-test"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Agent configuration guide",
+            "pages": [
+              {
+                "group": "Claude Code",
+                "pages": [
+                  "en/agent-configuration/claude-code/model-support",
+                  {
+                    "group": "Environment setup",
+                    "pages": [
+                      "en/agent-configuration/claude-code/install/claude-cli"
+                    ]
+                  },
+                  "en/agent-configuration/claude-code/configuration"
+                ]
+              },
+              {
+                "group": "Codex",
+                "pages": [
+                  "en/agent-configuration/codex/model-support",
+                  {
+                    "group": "Environment setup",
+                    "pages": [
+                      "en/agent-configuration/codex/install/codex-cli"
+                    ]
+                  },
+                  "en/agent-configuration/codex/configuration"
+                ]
+              },
+              {
+                "group": "OpenCode",
+                "pages": [
+                  "en/agent-configuration/opencode/model-support",
+                  {
+                    "group": "Environment setup",
+                    "pages": [
+                      "en/agent-configuration/opencode/install/opencode-cli"
+                    ]
+                  },
+                  "en/agent-configuration/opencode/configuration"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API reference",
+            "pages": [
+              "en/api-reference/introduction"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "cn",
+        "tabs": [
+          {
+            "tab": "概述",
+            "pages": [
+              {
+                "group": "开始使用",
+                "pages": [
+                  "cn/register",
+                  "cn/recharge",
+                  "cn/api-key",
+                  "cn/first-test"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Agent 配置指南",
+            "pages": [
+              {
+                "group": "Claude Code",
+                "pages": [
+                  "cn/agent-configuration/claude-code/model-support",
+                  {
+                    "group": "环境安装",
+                    "pages": [
+                      "cn/agent-configuration/claude-code/install/claude-cli"
+                    ]
+                  },
+                  "cn/agent-configuration/claude-code/configuration"
+                ]
+              },
+              {
+                "group": "Codex",
+                "pages": [
+                  "cn/agent-configuration/codex/model-support",
+                  {
+                    "group": "环境安装",
+                    "pages": [
+                      "cn/agent-configuration/codex/install/codex-cli"
+                    ]
+                  },
+                  "cn/agent-configuration/codex/configuration"
+                ]
+              },
+              {
+                "group": "OpenCode",
+                "pages": [
+                  "cn/agent-configuration/opencode/model-support",
+                  {
+                    "group": "环境安装",
+                    "pages": [
+                      "cn/agent-configuration/opencode/install/opencode-cli"
+                    ]
+                  },
+                  "cn/agent-configuration/opencode/configuration"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API 参考",
+            "pages": [
+              "cn/api-reference/introduction"
+            ]
+          }
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "global": {}
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/duiapi-docs.svg",
+    "dark": "/logo/duiapi-docs.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "返回首页",
+      "href": "https://www.duiapi.com"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
+  "search": {
+    "prompt": "Search docs..."
   },
   "footer": {
     "socials": {

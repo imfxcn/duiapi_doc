@@ -1,0 +1,110 @@
+---
+title: "First test"
+description: "Send your first request"
+---
+
+After creating an API key, send a simple request to test whether the API is available.
+
+## Endpoint
+
+```http
+POST https://www.duiapi.com/v1/messages
+```
+
+## Authentication and model selection
+
+Send `x-api-key` in the request headers and specify the model you want to use.
+
+```http
+<API_KEY> Replace with your API key, such as sk-xxxxxx
+<MODEL> Replace with the model you use, such as qwen3.7-max
+```
+
+## Request examples
+
+<CodeGroup>
+```bash cURL
+curl -sS 'https://www.duiapi.com/v1/messages' \
+  -X POST \
+  -H 'content-type: application/json' \
+  -H 'x-api-key: <API_KEY>' \
+  -H 'anthropic-version: 2023-06-01' \
+  -H 'anthropic-dangerous-direct-browser-access: true' \
+  --data-binary '{
+    "model": "<MODEL>",
+    "max_tokens": 64,
+    "messages": [
+      {
+        "role": "user",
+        "content": "just say hello world"
+      }
+    ]
+  }'
+```
+
+```javascript Node.js
+const apiKey = "<API_KEY>";
+const model = "<MODEL>";
+
+const response = await fetch("https://www.duiapi.com/v1/messages", {
+  method: "POST",
+  headers: {
+    "content-type": "application/json",
+    "x-api-key": apiKey,
+    "anthropic-version": "2023-06-01",
+    "anthropic-dangerous-direct-browser-access": "true",
+  },
+  body: JSON.stringify({
+    model,
+    max_tokens: 64,
+    messages: [{ role: "user", content: "just say hello world" }],
+  }),
+});
+
+const data = await response.json();
+console.log(data);
+```
+
+```python Python
+import requests
+
+api_key = "<API_KEY>"
+model = "<MODEL>"
+
+response = requests.post(
+    "https://www.duiapi.com/v1/messages",
+    headers={
+        "content-type": "application/json",
+        "x-api-key": api_key,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true",
+    },
+    json={
+        "model": model,
+        "max_tokens": 64,
+        "messages": [{"role": "user", "content": "just say hello world"}],
+    },
+    timeout=30,
+)
+
+print(response.json())
+```
+</CodeGroup>
+
+## Common errors
+
+| HTTP status | Cause | How to fix |
+| --- | --- | --- |
+| `401` | The key is invalid, disabled, or expired | Check the `x-api-key` header or create a new token |
+| `400 insufficient_user_quota` | Account balance or key quota is insufficient | Recharge your account |
+| `400 model_not_found` | The model does not exist, or is outside this key or group scope | Confirm the model ID and group in Model Marketplace |
+| `429` | Rate limit triggered | Retry with exponential backoff, or reduce concurrency |
+
+The `type` and `code` fields in error responses contain more specific error categories. Branch on these fields in your client instead of parsing only the `message` text.
+
+## Next steps
+
+After one request works, continue exploring:
+
+- [Connect models through Agent tools](/en/agent-configuration/claude-code/model-support)
+- [Connect models through API](/en/api-reference/introduction)

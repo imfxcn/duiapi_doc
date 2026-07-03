@@ -1,0 +1,28 @@
+<svg width="980" height="520" viewBox="0 0 980 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="520" fill="#F3F4F6"/>
+  <rect x="18" y="14" width="944" height="492" rx="6" fill="#0B0B0C" stroke="#D1D5DB"/>
+  <rect x="18" y="14" width="944" height="30" rx="6" fill="#F9FAFB"/>
+  <text x="34" y="34" font-family="Consolas, Menlo, monospace" font-size="14" fill="#111827">claude</text>
+  <text x="74" y="74" font-family="Consolas, Menlo, monospace" font-size="14" fill="#FCA5A5">Claude Code v2.0.50</text>
+  <rect x="32" y="68" width="810" height="160" rx="4" stroke="#FCA5A5"/>
+  <line x1="320" y1="76" x2="320" y2="218" stroke="#FCA5A5"/>
+  <text x="126" y="104" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">Welcome back!</text>
+  <text x="72" y="200" font-family="Consolas, Menlo, monospace" font-size="14" fill="#9CA3AF">Sonnet 4.5 · API Usage Billing</text>
+  <text x="72" y="218" font-family="Consolas, Menlo, monospace" font-size="14" fill="#9CA3AF">E:\Code\test_directory\123</text>
+  <text x="332" y="88" font-family="Consolas, Menlo, monospace" font-size="14" fill="#FBBF24">Tips for getting started</text>
+  <text x="332" y="108" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">Run /init to create a CLAUDE.md file with instructions for Claude</text>
+  <line x1="332" y1="116" x2="818" y2="116" stroke="#FCA5A5"/>
+  <text x="332" y="138" font-family="Consolas, Menlo, monospace" font-size="14" fill="#FCA5A5">Recent activity</text>
+  <text x="332" y="158" font-family="Consolas, Menlo, monospace" font-size="14" fill="#9CA3AF">No recent activity</text>
+  <text x="32" y="264" font-family="Consolas, Menlo, monospace" font-size="16" fill="#F9FAFB">&gt; 你好</text>
+  <text x="32" y="296" font-family="Consolas, Menlo, monospace" font-size="16" fill="#F9FAFB">● 你好！我是 Claude Code，一个由 Anthropic 开发的 AI 编程助手。</text>
+  <text x="52" y="328" font-family="Consolas, Menlo, monospace" font-size="15" fill="#F9FAFB">- 编写和修改代码</text>
+  <text x="52" y="350" font-family="Consolas, Menlo, monospace" font-size="15" fill="#F9FAFB">- 调试和修复问题</text>
+  <text x="52" y="372" font-family="Consolas, Menlo, monospace" font-size="15" fill="#F9FAFB">- 执行命令和脚本</text>
+  <text x="52" y="394" font-family="Consolas, Menlo, monospace" font-size="15" fill="#F9FAFB">- 管理 AWS 资源</text>
+  <text x="52" y="416" font-family="Consolas, Menlo, monospace" font-size="15" fill="#F9FAFB">- 优化和重构代码</text>
+  <line x1="18" y1="468" x2="962" y2="468" stroke="#CBD5E1"/>
+  <text x="32" y="492" font-family="Consolas, Menlo, monospace" font-size="14" fill="#67E8F9">▣ Sonnet 4.5</text>
+  <text x="170" y="492" font-family="Consolas, Menlo, monospace" font-size="14" fill="#A3E635">123</text>
+  <text x="230" y="492" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F472B6">1.5% · 2.9k tokens</text>
+</svg>

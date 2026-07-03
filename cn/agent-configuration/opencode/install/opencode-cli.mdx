@@ -1,0 +1,75 @@
+---
+title: "OpenCode CLI 安装"
+description: "安装 OpenCode CLI"
+---
+
+OpenCode CLI 需要 Node.js 和 npm。安装完成后，请至少运行一次 `opencode`，确认 OpenCode 可以正常启动。
+
+## 1. 确认 Node.js 环境
+
+在 Windows 终端、macOS 终端或 Linux shell 中运行：
+
+```bash
+node --version
+npm --version
+```
+
+如果可以看到版本号，说明 Node.js 和 npm 已安装。
+
+也可以运行下面的命令检查全局 npm 包：
+
+```bash
+npm list -g --depth=0
+```
+
+如果终端提示 `command not found`、`npm 不是内部或外部命令`，或无法显示版本号，说明当前环境还没有安装 Node.js。请先参考 [Node.js 安装教程](https://www.runoob.com/nodejs/nodejs-install-setup.html) 安装 Node.js，再重新运行上面的检查命令。
+
+<Tip>
+  建议安装 Node.js LTS 版本。安装完成后，请重新打开终端，再执行 `node --version` 和 `npm --version`。
+</Tip>
+
+## 2. 安装 OpenCode CLI
+
+确认 Node.js 可用后，使用 npm 全局安装 OpenCode：
+
+```bash
+npm install -g opencode-ai@latest
+```
+
+安装完成后，检查 OpenCode 版本：
+
+```bash
+opencode --version
+```
+
+如果可以看到版本号，说明 CLI 已安装成功。
+
+## 3. 初始化 OpenCode
+
+首次安装后，请运行一次：
+
+```bash
+opencode
+```
+
+这一步用于确认 OpenCode 可以正常启动。运行后，如果出现 OpenCode 对话界面、模型信息或命令提示，说明安装成功。
+
+![OpenCode 正常启动示例](/images/opencode-cli-started.svg)
+
+## 常见问题
+
+### 提示 opencode 命令不存在
+
+请先确认 npm 全局安装目录已加入系统 `PATH`。你也可以重新打开终端后再执行：
+
+```bash
+opencode --version
+```
+
+### npm 安装速度慢或失败
+
+请确认网络可以访问 npm registry。必要时可以切换网络环境后重试。
+
+### 安装完成后下一步做什么
+
+完成 OpenCode CLI 安装后，继续阅读 **配置指南**，将 OpenCode 的 API 地址和模型配置到 DUIAPI。

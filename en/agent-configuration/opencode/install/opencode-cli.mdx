@@ -1,0 +1,39 @@
+---
+title: "OpenCode CLI installation"
+description: "Install OpenCode CLI"
+---
+
+OpenCode CLI requires Node.js and npm. After installation, run `opencode` at least once to confirm OpenCode starts correctly.
+
+## 1. Check Node.js
+
+```bash
+node --version
+npm --version
+```
+
+If version numbers appear, Node.js and npm are installed.
+
+If Node.js is not installed, refer to the [Node.js installation guide](https://www.runoob.com/nodejs/nodejs-install-setup.html), then run the checks again.
+
+## 2. Install OpenCode CLI
+
+```bash
+npm install -g opencode-ai@latest
+```
+
+Check the installed version:
+
+```bash
+opencode --version
+```
+
+## 3. Initialize OpenCode
+
+```bash
+opencode
+```
+
+If the OpenCode chat UI, model information, or command hints appear, the installation succeeded.
+
+![OpenCode started successfully](/images/opencode-cli-started.svg)

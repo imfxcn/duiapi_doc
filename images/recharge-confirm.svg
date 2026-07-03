@@ -1,0 +1,21 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#E5E7EB"/>
+  <rect width="1600" height="900" fill="#111827" opacity="0.18"/>
+  <rect x="270" y="140" width="1060" height="610" rx="18" fill="#F3F4F6" opacity="0.55"/>
+  <rect x="580" y="250" width="440" height="330" rx="16" fill="white" stroke="#D1D5DB"/>
+  <text x="610" y="305" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">确认付款</text>
+  <text x="610" y="340" font-family="Inter, Arial, sans-serif" font-size="16" fill="#6B7280">查看您的付款详情</text>
+  <text x="610" y="405" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">充值金额</text>
+  <text x="940" y="405" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="end" fill="#111827">¥10</text>
+  <text x="610" y="455" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">您支付</text>
+  <text x="940" y="455" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end" fill="#111827">10</text>
+  <line x1="610" y1="485" x2="940" y2="485" stroke="#E5E7EB"/>
+  <text x="610" y="530" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">付款方式</text>
+  <rect x="865" y="510" width="24" height="24" rx="5" fill="#1677FF"/>
+  <text x="900" y="530" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">支付宝</text>
+  <line x1="580" y1="560" x2="1020" y2="560" stroke="#E5E7EB"/>
+  <rect x="845" y="590" width="70" height="38" rx="10" fill="white" stroke="#D1D5DB"/>
+  <text x="880" y="615" font-family="Inter, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111827">取消</text>
+  <rect x="925" y="590" width="95" height="38" rx="10" fill="#1677FF"/>
+  <text x="972" y="615" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="white">确认付款</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="980" height="520" viewBox="0 0 980 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="520" fill="#F3F4F6"/>
+  <rect x="18" y="14" width="944" height="492" rx="6" fill="#0B0B0C" stroke="#D1D5DB"/>
+  <rect x="18" y="14" width="944" height="30" rx="6" fill="#F9FAFB"/>
+  <text x="34" y="34" font-family="Consolas, Menlo, monospace" font-size="14" fill="#111827">opencode</text>
+  <text x="34" y="74" font-family="Consolas, Menlo, monospace" font-size="16" fill="#F9FAFB">OpenCode</text>
+  <text x="34" y="104" font-family="Consolas, Menlo, monospace" font-size="14" fill="#9CA3AF">model: qwen3.7-max</text>
+  <text x="34" y="126" font-family="Consolas, Menlo, monospace" font-size="14" fill="#9CA3AF">provider: @ai-sdk/anthropic · DUIAPI</text>
+  <rect x="34" y="150" width="880" height="84" rx="6" stroke="#64748B"/>
+  <text x="58" y="182" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">To get started, describe a task or choose a configured model.</text>
+  <text x="58" y="210" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">Use /model to switch between qwen3.7-max, glm-5.2, and deepseek-v4-pro.</text>
+  <text x="34" y="280" font-family="Consolas, Menlo, monospace" font-size="15" fill="#F9FAFB">&gt; just say hello world</text>
+  <text x="34" y="320" font-family="Consolas, Menlo, monospace" font-size="15" fill="#A7F3D0">hello world</text>
+  <line x1="18" y1="468" x2="962" y2="468" stroke="#CBD5E1"/>
+  <text x="34" y="494" font-family="Consolas, Menlo, monospace" font-size="14" fill="#67E8F9">DUIAPI</text>
+  <text x="110" y="494" font-family="Consolas, Menlo, monospace" font-size="14" fill="#F9FAFB">qwen3.7-max</text>
+</svg>

@@ -1,0 +1,33 @@
+---
+title: "快速开始"
+description: "用最快路径完成第一次成功使用"
+---
+
+本页会带你完成第一次 DUI API 请求。
+
+## 前置条件
+
+开始之前，你需要：
+
+- 一个 DUI API 账号
+- 一个 API key
+- 可以发送 HTTPS 请求的终端或 API 客户端
+
+## 发送请求
+
+<Steps>
+  <Step title="准备 API key">
+    从控制台或管理员处获取你的 API key。
+  </Step>
+  <Step title="发送请求">
+    在 `Authorization` header 中传入 API key。
+
+    ```bash
+    curl https://api.example.com/v1/resources \
+      -H "Authorization: Bearer YOUR_API_KEY"
+    ```
+  </Step>
+  <Step title="查看响应">
+    确认响应体中返回了资源数据。
+  </Step>
+</Steps>

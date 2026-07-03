@@ -1,0 +1,29 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F7F8"/>
+  <rect x="190" y="54" width="1360" height="792" rx="22" fill="white" stroke="#E5E7EB"/>
+  <text x="220" y="95" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">API 密钥</text>
+  <rect x="1300" y="72" width="210" height="44" rx="12" fill="#1677FF"/>
+  <text x="1405" y="101" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="white">+ 创建 API 密钥</text>
+  <rect x="220" y="135" width="240" height="38" rx="10" fill="white" stroke="#D1D5DB"/>
+  <text x="235" y="160" font-family="Inter, Arial, sans-serif" font-size="16" fill="#9CA3AF">按名称筛选...</text>
+  <rect x="475" y="135" width="260" height="38" rx="10" fill="white" stroke="#D1D5DB"/>
+  <text x="490" y="160" font-family="Inter, Arial, sans-serif" font-size="16" fill="#9CA3AF">按 API 密钥筛选...</text>
+  <rect x="220" y="190" width="1290" height="650" rx="12" fill="#FAFAFB" stroke="#E5E7EB"/>
+  <line x1="220" y1="238" x2="1510" y2="238" stroke="#E5E7EB"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827">
+    <text x="270" y="222">名称</text>
+    <text x="470" y="222">状态</text>
+    <text x="620" y="222">API 密钥</text>
+    <text x="850" y="222">额度</text>
+    <text x="1030" y="222">分组</text>
+    <text x="1210" y="222">模型</text>
+    <text x="1380" y="222">操作</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <circle cx="865" cy="475" r="18" fill="none" stroke="#111827" stroke-width="3"/>
+    <text x="865" y="530" font-size="20" font-weight="700" fill="#111827">未找到 API 密钥</text>
+    <text x="865" y="562" font-size="16" fill="#9CA3AF">没有可用的 API 密钥。创建您的第一个 API 密钥即可开始使用。</text>
+  </g>
+  <rect x="12" y="265" width="168" height="36" rx="10" fill="#E8F2FF"/>
+  <text x="45" y="289" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#1677FF">API 密钥</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg width="900" height="1280" viewBox="0 0 900 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1280" fill="#F7F7F8"/>
+  <text x="42" y="65" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#111827">创建 API 密钥</text>
+  <text x="42" y="105" font-family="Inter, Arial, sans-serif" font-size="20" fill="#6B7280">通过提供必要信息添加新的 API 密钥。</text>
+  <line x1="0" y1="140" x2="900" y2="140" stroke="#E5E7EB"/>
+  <text x="95" y="205" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">基础信息</text>
+  <text x="95" y="240" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">设置令牌的基本信息</text>
+  <text x="42" y="305" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">名称</text>
+  <rect x="42" y="322" width="816" height="52" rx="12" fill="white" stroke="#1677FF" stroke-width="3"/>
+  <text x="60" y="356" font-family="Inter, Arial, sans-serif" font-size="22" fill="#111827">dev</text>
+  <text x="42" y="430" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">分组</text>
+  <rect x="42" y="448" width="816" height="120" rx="14" fill="white" stroke="#D1D5DB"/>
+  <text x="70" y="500" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">default-anthropic-compatible</text>
+  <text x="70" y="535" font-family="Inter, Arial, sans-serif" font-size="20" fill="#6B7280">默认分组-anthropic协议</text>
+  <rect x="720" y="495" width="90" height="32" rx="16" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text x="765" y="518" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#047857">1x 倍率</text>
+  <text x="42" y="620" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">过期时间</text>
+  <rect x="42" y="638" width="235" height="52" rx="12" fill="white" stroke="#D1D5DB"/>
+  <text x="65" y="672" font-family="Inter, Arial, sans-serif" font-size="22" fill="#6B7280">永不过期</text>
+  <rect x="295" y="638" width="185" height="52" rx="12" fill="#F3F4F6" stroke="#E5E7EB"/>
+  <text x="315" y="672" font-family="Inter, Arial, sans-serif" font-size="22" fill="#9CA3AF">00:00</text>
+  <rect x="495" y="638" width="72" height="52" rx="12" fill="white" stroke="#D1D5DB"/>
+  <text x="531" y="672" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#111827">永不</text>
+  <rect x="582" y="638" width="92" height="52" rx="12" fill="white" stroke="#D1D5DB"/>
+  <text x="628" y="672" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#111827">1 个月</text>
+  <rect x="42" y="750" width="816" height="54" rx="12" fill="white" stroke="#D1D5DB"/>
+  <text x="60" y="784" font-family="Inter, Arial, sans-serif" font-size="22" fill="#111827">1</text>
+  <text x="42" y="838" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">一次性创建多个 API 密钥（名称将添加随机后缀）</text>
+  <line x1="42" y1="895" x2="858" y2="895" stroke="#E5E7EB"/>
+  <text x="95" y="950" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">额度设置</text>
+  <text x="95" y="985" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">设置令牌可用额度和数量</text>
+  <text x="42" y="1065" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">无限配额</text>
+  <text x="42" y="1100" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">为此 API 密钥启用无限配额</text>
+  <rect x="790" y="1062" width="60" height="30" rx="15" fill="#1677FF"/>
+  <circle cx="835" cy="1077" r="14" fill="white"/>
+  <line x1="42" y1="1140" x2="858" y2="1140" stroke="#E5E7EB"/>
+  <text x="95" y="1190" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">高级设置</text>
+  <text x="95" y="1225" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B7280">设置令牌的访问限制</text>
+</svg>

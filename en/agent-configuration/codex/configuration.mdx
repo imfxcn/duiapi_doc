@@ -1,0 +1,112 @@
+---
+title: "Configuration guide"
+description: "Configure Codex to use DUIAPI"
+---
+
+Codex uses two files for configuration: `config.toml` and `auth.json`. `config.toml` sets the model and API endpoint. `auth.json` stores the API key.
+
+<Tabs>
+  <Tab title="Windows">
+    ## 1. Open the configuration directory
+
+    Press **Win + R**, enter the following path, and press Enter:
+
+    ```text
+    %userprofile%\.codex
+    ```
+
+    If `config.toml` or `auth.json` does not exist, create it.
+
+    ## 2. Write config.toml
+
+    <Tip>
+      Replace `<API_KEY>` with your API key, such as `sk-xxxxxx`. Replace `<MODEL>` with the model you use, such as `qwen3.7-max`.
+    </Tip>
+
+    ```toml
+    model_provider = "custom"
+    model = "<MODEL>"
+    disable_response_storage = true
+    model_reasoning_effort = "medium"
+
+    [model_providers]
+    [model_providers.custom]
+    name = "custom"
+    wire_api = "responses"
+    requires_openai_auth = true
+    base_url = "https://www.duiapi.com/v1"
+    ```
+
+    ## 3. Write auth.json
+
+    ```json
+    {
+      "OPENAI_API_KEY": "<API_KEY>"
+    }
+    ```
+
+    ## 4. Test the configuration
+
+    ```bash
+    codex
+    ```
+  </Tab>
+
+  <Tab title="macOS">
+    ## 1. Open the configuration directory
+
+    ```bash
+    mkdir -p ~/.codex
+    cd ~/.codex
+    touch config.toml auth.json
+    open -a TextEdit config.toml
+    ```
+
+    ## 2. Write config.toml
+
+    Use the same `config.toml` content shown in the Windows tab.
+
+    ## 3. Write auth.json
+
+    ```bash
+    open -a TextEdit auth.json
+    ```
+
+    Use the same `auth.json` content shown in the Windows tab.
+
+    ## 4. Test the configuration
+
+    ```bash
+    codex
+    ```
+  </Tab>
+
+  <Tab title="Linux">
+    ## 1. Open the configuration directory
+
+    ```bash
+    mkdir -p ~/.codex
+    cd ~/.codex
+    touch config.toml auth.json
+    nano config.toml
+    ```
+
+    ## 2. Write config.toml
+
+    Use the same `config.toml` content shown in the Windows tab.
+
+    ## 3. Write auth.json
+
+    ```bash
+    nano auth.json
+    ```
+
+    Use the same `auth.json` content shown in the Windows tab.
+
+    ## 4. Test the configuration
+
+    ```bash
+    codex
+    ```
+  </Tab>
+</Tabs>

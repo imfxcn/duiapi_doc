@@ -1,0 +1,167 @@
+---
+title: "配置指南"
+description: "配置 Claude Code 使用 DUIAPI"
+---
+
+手动配置适合你想直接编辑 Claude Code 配置文件的场景。配置完成后，Claude Code 会通过 DUIAPI 地址请求模型。
+
+<Tabs>
+  <Tab title="Windows">
+    ## 1. 打开配置目录
+
+    键盘按下 **Win + R**，输入以下内容后回车，打开 Claude Code 配置目录：
+
+    ```text
+    %userprofile%\.claude
+    ```
+
+    如果目录中没有 `settings.json`，请手动创建后打开。
+
+    ## 2. 写入 settings.json
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。`<MODEL>` 请更换为您使用的模型，例如 `qwen3.7-max`。
+    </Tip>
+
+    将以下内容写入 `settings.json`：
+
+    ```json
+    {
+      "env": {
+        "ANTHROPIC_AUTH_TOKEN": "<API_KEY>",
+        "ANTHROPIC_BASE_URL": "https://www.duiapi.com",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "<MODEL>",
+        "ANTHROPIC_MODEL": "<MODEL>",
+        "CLAUDE_CODE_SUBAGENT_MODEL": "<MODEL>"
+      },
+      "includeCoAuthoredBy": false
+    }
+    ```
+
+    ## 3. 测试配置
+
+    保存 `settings.json` 后，在 Windows 终端运行：
+
+    ```bash
+    claude
+    ```
+
+    出现对话界面后，发送一条测试消息。如果 Claude Code 能收到回复，即表示配置成功。
+  </Tab>
+
+  <Tab title="macOS">
+    ## 1. 打开配置目录
+
+    打开终端，运行以下命令进入 Claude Code 配置目录：
+
+    ```bash
+    cd ~/.claude
+    ```
+
+    如果目录不存在，请先创建目录：
+
+    ```bash
+    mkdir -p ~/.claude
+    cd ~/.claude
+    ```
+
+    如果目录中没有 `settings.json`，请手动创建后打开：
+
+    ```bash
+    touch settings.json
+    open -a TextEdit settings.json
+    ```
+
+    ## 2. 写入 settings.json
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。`<MODEL>` 请更换为您使用的模型，例如 `qwen3.7-max`。
+    </Tip>
+
+    将以下内容写入 `settings.json`：
+
+    ```json
+    {
+      "env": {
+        "ANTHROPIC_AUTH_TOKEN": "<API_KEY>",
+        "ANTHROPIC_BASE_URL": "https://www.duiapi.com",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "<MODEL>",
+        "ANTHROPIC_MODEL": "<MODEL>",
+        "CLAUDE_CODE_SUBAGENT_MODEL": "<MODEL>"
+      },
+      "includeCoAuthoredBy": false
+    }
+    ```
+
+    ## 3. 测试配置
+
+    保存 `settings.json` 后，在终端运行：
+
+    ```bash
+    claude
+    ```
+
+    出现对话界面后，发送一条测试消息。如果 Claude Code 能收到回复，即表示配置成功。
+  </Tab>
+
+  <Tab title="Linux">
+    ## 1. 打开配置目录
+
+    打开终端，运行以下命令进入 Claude Code 配置目录：
+
+    ```bash
+    cd ~/.claude
+    ```
+
+    如果目录不存在，请先创建目录：
+
+    ```bash
+    mkdir -p ~/.claude
+    cd ~/.claude
+    ```
+
+    如果目录中没有 `settings.json`，请手动创建后打开：
+
+    ```bash
+    touch settings.json
+    nano settings.json
+    ```
+
+    ## 2. 写入 settings.json
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。`<MODEL>` 请更换为您使用的模型，例如 `qwen3.7-max`。
+    </Tip>
+
+    将以下内容写入 `settings.json`：
+
+    ```json
+    {
+      "env": {
+        "ANTHROPIC_AUTH_TOKEN": "<API_KEY>",
+        "ANTHROPIC_BASE_URL": "https://www.duiapi.com",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "<MODEL>",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "<MODEL>",
+        "ANTHROPIC_MODEL": "<MODEL>",
+        "CLAUDE_CODE_SUBAGENT_MODEL": "<MODEL>"
+      },
+      "includeCoAuthoredBy": false
+    }
+    ```
+
+    ## 3. 测试配置
+
+    保存 `settings.json` 后，在终端运行：
+
+    ```bash
+    claude
+    ```
+
+    出现对话界面后，发送一条测试消息。如果 Claude Code 能收到回复，即表示配置成功。
+  </Tab>
+</Tabs>

@@ -1,0 +1,196 @@
+---
+title: "配置指南"
+description: "配置 Codex 使用 DUIAPI"
+---
+
+Codex CLI 通过 `config.toml` 和 `auth.json` 两个文件完成配置。`config.toml` 用于指定模型和接口地址，`auth.json` 用于保存 API 密钥。
+
+<Tabs>
+  <Tab title="Windows">
+    ## 1. 打开配置目录
+
+    键盘按下 **Win + R**，输入以下内容后回车，打开 Codex 配置目录：
+
+    ```text
+    %userprofile%\.codex
+    ```
+
+    如果目录中没有 `config.toml` 或 `auth.json`，请手动创建。
+
+    ## 2. 写入 config.toml
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。`<MODEL>` 请更换为您使用的模型，例如 `qwen3.7-max`。
+    </Tip>
+
+    将以下内容写入 `config.toml`：
+
+    ```toml
+    model_provider = "custom"
+    model = "<MODEL>"
+    disable_response_storage = true
+    model_reasoning_effort = "medium"
+
+    [model_providers]
+    [model_providers.custom]
+    name = "custom"
+    wire_api = "responses"
+    requires_openai_auth = true
+    base_url = "https://www.duiapi.com/v1"
+    ```
+
+    ## 3. 写入 auth.json
+
+    将以下内容写入 `auth.json`：
+
+    ```json
+    {
+      "OPENAI_API_KEY": "<API_KEY>"
+    }
+    ```
+
+    ## 4. 测试配置
+
+    在新终端中运行：
+
+    ```bash
+    codex
+    ```
+
+    出现对话界面后，发送一条测试消息。如果 Codex 能收到回复，即表示配置成功。
+  </Tab>
+
+  <Tab title="macOS">
+    ## 1. 打开配置目录
+
+    打开终端，运行以下命令进入 Codex 配置目录：
+
+    ```bash
+    mkdir -p ~/.codex
+    cd ~/.codex
+    ```
+
+    如果目录中没有 `config.toml` 或 `auth.json`，请手动创建：
+
+    ```bash
+    touch config.toml
+    touch auth.json
+    open -a TextEdit config.toml
+    ```
+
+    ## 2. 写入 config.toml
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。`<MODEL>` 请更换为您使用的模型，例如 `qwen3.7-max`。
+    </Tip>
+
+    将以下内容写入 `config.toml`：
+
+    ```toml
+    model_provider = "custom"
+    model = "<MODEL>"
+    disable_response_storage = true
+    model_reasoning_effort = "medium"
+
+    [model_providers]
+    [model_providers.custom]
+    name = "custom"
+    wire_api = "responses"
+    requires_openai_auth = true
+    base_url = "https://www.duiapi.com/v1"
+    ```
+
+    ## 3. 写入 auth.json
+
+    打开 `auth.json`：
+
+    ```bash
+    open -a TextEdit auth.json
+    ```
+
+    将以下内容写入 `auth.json`：
+
+    ```json
+    {
+      "OPENAI_API_KEY": "<API_KEY>"
+    }
+    ```
+
+    ## 4. 测试配置
+
+    在终端中运行：
+
+    ```bash
+    codex
+    ```
+
+    出现对话界面后，发送一条测试消息。如果 Codex 能收到回复，即表示配置成功。
+  </Tab>
+
+  <Tab title="Linux">
+    ## 1. 打开配置目录
+
+    打开终端，运行以下命令进入 Codex 配置目录：
+
+    ```bash
+    mkdir -p ~/.codex
+    cd ~/.codex
+    ```
+
+    如果目录中没有 `config.toml` 或 `auth.json`，请手动创建：
+
+    ```bash
+    touch config.toml
+    touch auth.json
+    nano config.toml
+    ```
+
+    ## 2. 写入 config.toml
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。`<MODEL>` 请更换为您使用的模型，例如 `qwen3.7-max`。
+    </Tip>
+
+    将以下内容写入 `config.toml`：
+
+    ```toml
+    model_provider = "custom"
+    model = "<MODEL>"
+    disable_response_storage = true
+    model_reasoning_effort = "medium"
+
+    [model_providers]
+    [model_providers.custom]
+    name = "custom"
+    wire_api = "responses"
+    requires_openai_auth = true
+    base_url = "https://www.duiapi.com/v1"
+    ```
+
+    ## 3. 写入 auth.json
+
+    打开 `auth.json`：
+
+    ```bash
+    nano auth.json
+    ```
+
+    将以下内容写入 `auth.json`：
+
+    ```json
+    {
+      "OPENAI_API_KEY": "<API_KEY>"
+    }
+    ```
+
+    ## 4. 测试配置
+
+    在终端中运行：
+
+    ```bash
+    codex
+    ```
+
+    出现对话界面后，发送一条测试消息。如果 Codex 能收到回复，即表示配置成功。
+  </Tab>
+</Tabs>

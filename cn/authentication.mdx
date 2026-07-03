@@ -1,0 +1,19 @@
+---
+title: "认证"
+description: "安全创建和使用 API key"
+---
+
+使用 API key 认证 DUI API 请求。
+
+## 获取 API key
+
+向工作区管理员申请访问权限，或联系支持团队。
+
+## 发送认证请求
+
+在 `Authorization` header 中传入 API key。
+
+```bash
+curl https://api.example.com/v1/resources \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```

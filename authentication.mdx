@@ -1,0 +1,19 @@
+---
+title: "Authentication"
+description: "Create and use your API key securely"
+---
+
+Use an API key to authenticate requests to DUI API.
+
+## Get an API key
+
+Request access from your workspace administrator or contact support.
+
+## Send authenticated requests
+
+Pass your API key in the `Authorization` header.
+
+```bash
+curl https://api.example.com/v1/resources \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```

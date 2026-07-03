@@ -1,0 +1,39 @@
+---
+title: "Codex CLI installation"
+description: "Install Codex CLI"
+---
+
+Codex CLI requires Node.js and npm. After installation, run `codex` at least once to confirm Codex starts correctly.
+
+## 1. Check Node.js
+
+```bash
+node --version
+npm --version
+```
+
+If version numbers appear, Node.js and npm are installed.
+
+If Node.js is not installed, refer to the [Node.js installation guide](https://www.runoob.com/nodejs/nodejs-install-setup.html), then run the checks again.
+
+## 2. Install Codex CLI
+
+```bash
+npm install -g @openai/codex@latest
+```
+
+Check the installed version:
+
+```bash
+codex --version
+```
+
+## 3. Initialize Codex
+
+```bash
+codex
+```
+
+If the Codex chat UI, model information, or command hints appear, the installation succeeded.
+
+![Codex started successfully](/images/codex-cli-started.svg)

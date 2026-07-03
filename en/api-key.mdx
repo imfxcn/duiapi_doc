@@ -1,0 +1,56 @@
+---
+title: "Create an API key"
+description: "Get and use an API key"
+---
+
+An API key, or token, is the credential used to access platform APIs. It usually starts with `sk-`. One account can create multiple keys. We recommend managing keys by environment or project, such as development, production, or different apps. This makes it easier to set permissions, quotas, rate limits, or disable one key independently.
+
+## 1. Open the API key page
+
+After logging in, open **API Keys** (`/keys`) in the console, then click **Create API Key** in the upper-right corner.
+
+![API key management page](/images/api-key-list.svg)
+
+## 2. Configure the key
+
+The creation page has three sections.
+
+![Create API key page](/images/api-key-create.svg)
+
+### Basic information
+
+**Name**: Identifies the key purpose, such as `qwen` or `for_dev`.
+
+**Group**: Determines the model range, protocol, and billing multiplier available to this key.
+
+**Quantity**: Creates multiple keys with the same configuration at once. The default is 1.
+
+**Expiration**: Long-term by default. You can also set a fixed duration, such as 1 day or 1 month.
+
+### Quota settings
+
+**Unlimited quota**: When enabled, the key has no independent spending limit. The actual available quota is still limited by your account balance.
+
+**Quota limit**: Sets an independent quota for one key, such as ¥10 or ¥100.
+
+### Access restrictions
+
+**Model restrictions**: Select which models this key can call. Unselected models cannot be accessed with this key.
+
+**IP allowlist**: Restricts the key to specific IP addresses or CIDR ranges. Leave it empty to allow any source address. Enter one IP or range per line.
+
+<Tip>
+  If you are not sure which group to choose, open Model Marketplace to check supported models and multipliers for each group.
+</Tip>
+
+## 3. Save the key
+
+After creation, click **Copy** in the token list to copy the full key.
+
+Save the full key in a secure place immediately after creation, such as a password manager, server environment variable, or secret management service. Keys shown in the list are usually masked.
+
+## Manage existing keys
+
+The key list shows each key's status, such as enabled, disabled, expired, or quota exhausted. It also shows remaining quota, total quota, group, model permissions, and IP restrictions.
+
+You can edit an existing key at any time, or disable or delete keys you no longer use.

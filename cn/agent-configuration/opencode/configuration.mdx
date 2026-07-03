@@ -1,0 +1,176 @@
+---
+title: "配置指南"
+description: "配置 OpenCode 使用 DUIAPI"
+---
+
+OpenCode 通过 `opencode.json` 完成模型和接口配置。你可以把配置写入全局配置文件，让 OpenCode 默认通过 DUIAPI 请求模型。
+
+<Tabs>
+  <Tab title="Windows">
+    ## 1. 打开配置目录
+
+    键盘按下 **Win + R**，输入以下内容后回车，打开 OpenCode 配置目录：
+
+    ```text
+    %userprofile%\.config\opencode
+    ```
+
+    如果目录不存在，请手动创建。如果目录中没有 `opencode.json`，请手动创建后打开。
+
+    ## 2. 写入 opencode.json
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。模型名称请更换为您使用的模型。
+    </Tip>
+
+    将以下内容写入 `opencode.json`：
+
+    ```json
+    {
+      "models": {
+        "deepseek-v4-pro": {
+          "name": "deepseek-v4-pro"
+        },
+        "glm-5.2": {
+          "name": "glm-5.2"
+        },
+        "qwen3.7-max": {
+          "name": "qwen3.7-max"
+        }
+      },
+      "npm": "@ai-sdk/anthropic",
+      "options": {
+        "apiKey": "<API_KEY>",
+        "baseURL": "https://www.duiapi.com/v1",
+        "setCacheKey": true
+      }
+    }
+    ```
+
+    ## 3. 测试配置
+
+    在 Windows 终端中运行：
+
+    ```bash
+    opencode
+    ```
+
+    出现对话界面后，选择已配置的模型并发送一条测试消息。如果 OpenCode 能收到回复，即表示配置成功。
+  </Tab>
+
+  <Tab title="macOS">
+    ## 1. 打开配置目录
+
+    打开终端，运行以下命令进入 OpenCode 配置目录：
+
+    ```bash
+    mkdir -p ~/.config/opencode
+    cd ~/.config/opencode
+    ```
+
+    如果目录中没有 `opencode.json`，请手动创建后打开：
+
+    ```bash
+    touch opencode.json
+    open -a TextEdit opencode.json
+    ```
+
+    ## 2. 写入 opencode.json
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。模型名称请更换为您使用的模型。
+    </Tip>
+
+    将以下内容写入 `opencode.json`：
+
+    ```json
+    {
+      "models": {
+        "deepseek-v4-pro": {
+          "name": "deepseek-v4-pro"
+        },
+        "glm-5.2": {
+          "name": "glm-5.2"
+        },
+        "qwen3.7-max": {
+          "name": "qwen3.7-max"
+        }
+      },
+      "npm": "@ai-sdk/anthropic",
+      "options": {
+        "apiKey": "<API_KEY>",
+        "baseURL": "https://www.duiapi.com/v1",
+        "setCacheKey": true
+      }
+    }
+    ```
+
+    ## 3. 测试配置
+
+    在终端中运行：
+
+    ```bash
+    opencode
+    ```
+
+    出现对话界面后，选择已配置的模型并发送一条测试消息。如果 OpenCode 能收到回复，即表示配置成功。
+  </Tab>
+
+  <Tab title="Linux">
+    ## 1. 打开配置目录
+
+    打开终端，运行以下命令进入 OpenCode 配置目录：
+
+    ```bash
+    mkdir -p ~/.config/opencode
+    cd ~/.config/opencode
+    ```
+
+    如果目录中没有 `opencode.json`，请手动创建后打开：
+
+    ```bash
+    touch opencode.json
+    nano opencode.json
+    ```
+
+    ## 2. 写入 opencode.json
+
+    <Tip>
+      `<API_KEY>` 请更换为您的 API 密钥，例如 `sk-xxxxxx`。模型名称请更换为您使用的模型。
+    </Tip>
+
+    将以下内容写入 `opencode.json`：
+
+    ```json
+    {
+      "models": {
+        "deepseek-v4-pro": {
+          "name": "deepseek-v4-pro"
+        },
+        "glm-5.2": {
+          "name": "glm-5.2"
+        },
+        "qwen3.7-max": {
+          "name": "qwen3.7-max"
+        }
+      },
+      "npm": "@ai-sdk/anthropic",
+      "options": {
+        "apiKey": "<API_KEY>",
+        "baseURL": "https://www.duiapi.com/v1",
+        "setCacheKey": true
+      }
+    }
+    ```
+
+    ## 3. 测试配置
+
+    在终端中运行：
+
+    ```bash
+    opencode
+    ```
+
+    出现对话界面后，选择已配置的模型并发送一条测试消息。如果 OpenCode 能收到回复，即表示配置成功。
+  </Tab>
+</Tabs>
