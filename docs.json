@@ -81,6 +81,7 @@
       },
       {
         "language": "cn",
+        "default": true,
         "tabs": [
           {
             "tab": "概述",
@@ -165,6 +166,12 @@
   "search": {
     "prompt": "Search docs..."
   },
+  "scripts": [
+    {
+      "src": "/return-home.js",
+      "strategy": "afterInteractive"
+    }
+  ],
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
