@@ -11,76 +11,6 @@
   "navigation": {
     "languages": [
       {
-        "language": "en",
-        "tabs": [
-          {
-            "tab": "Overview",
-            "pages": [
-              {
-                "group": "Get started",
-                "pages": [
-                  "en/index",
-                  "en/register",
-                  "en/recharge",
-                  "en/api-key",
-                  "en/first-test"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Agent configuration guide",
-            "pages": [
-              {
-                "group": "Claude Code",
-                "pages": [
-                  "en/agent-configuration/claude-code/model-support",
-                  {
-                    "group": "Environment setup",
-                    "pages": [
-                      "en/agent-configuration/claude-code/install/claude-cli"
-                    ]
-                  },
-                  "en/agent-configuration/claude-code/configuration"
-                ]
-              },
-              {
-                "group": "Codex",
-                "pages": [
-                  "en/agent-configuration/codex/model-support",
-                  {
-                    "group": "Environment setup",
-                    "pages": [
-                      "en/agent-configuration/codex/install/codex-cli"
-                    ]
-                  },
-                  "en/agent-configuration/codex/configuration"
-                ]
-              },
-              {
-                "group": "OpenCode",
-                "pages": [
-                  "en/agent-configuration/opencode/model-support",
-                  {
-                    "group": "Environment setup",
-                    "pages": [
-                      "en/agent-configuration/opencode/install/opencode-cli"
-                    ]
-                  },
-                  "en/agent-configuration/opencode/configuration"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "API reference",
-            "pages": [
-              "en/api-reference/introduction"
-            ]
-          }
-        ]
-      },
-      {
         "language": "cn",
         "default": true,
         "tabs": [
@@ -147,6 +77,76 @@
             "tab": "API 参考",
             "pages": [
               "cn/api-reference/introduction"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Overview",
+            "pages": [
+              {
+                "group": "Get started",
+                "pages": [
+                  "en/index",
+                  "en/register",
+                  "en/recharge",
+                  "en/api-key",
+                  "en/first-test"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Agent configuration guide",
+            "pages": [
+              {
+                "group": "Claude Code",
+                "pages": [
+                  "en/agent-configuration/claude-code/model-support",
+                  {
+                    "group": "Environment setup",
+                    "pages": [
+                      "en/agent-configuration/claude-code/install/claude-cli"
+                    ]
+                  },
+                  "en/agent-configuration/claude-code/configuration"
+                ]
+              },
+              {
+                "group": "Codex",
+                "pages": [
+                  "en/agent-configuration/codex/model-support",
+                  {
+                    "group": "Environment setup",
+                    "pages": [
+                      "en/agent-configuration/codex/install/codex-cli"
+                    ]
+                  },
+                  "en/agent-configuration/codex/configuration"
+                ]
+              },
+              {
+                "group": "OpenCode",
+                "pages": [
+                  "en/agent-configuration/opencode/model-support",
+                  {
+                    "group": "Environment setup",
+                    "pages": [
+                      "en/agent-configuration/opencode/install/opencode-cli"
+                    ]
+                  },
+                  "en/agent-configuration/opencode/configuration"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API reference",
+            "pages": [
+              "en/api-reference/introduction"
             ]
           }
         ]
