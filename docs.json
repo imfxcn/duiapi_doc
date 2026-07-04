@@ -19,6 +19,7 @@
               {
                 "group": "Get started",
                 "pages": [
+                  "en/index",
                   "en/register",
                   "en/recharge",
                   "en/api-key",
@@ -89,6 +90,7 @@
               {
                 "group": "开始使用",
                 "pages": [
+                  "cn/index",
                   "cn/register",
                   "cn/recharge",
                   "cn/api-key",
