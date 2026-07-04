@@ -1,25 +1,46 @@
-function bindReturnHomeButton() {
-  const button = document.querySelector('#topbar-cta-button');
-  if (!button || button.dataset.duiapiReturnHomeBound === 'true') {
-    return;
+const DUIAPI_HOME_URL = "https://www.duiapi.com";
+
+function isReturnHomeLink(link) {
+  if (!link) {
+    return false;
   }
 
-  const href = button.getAttribute('href');
-  if (href !== 'https://www.duiapi.com') {
-    return;
+  try {
+    const url = new URL(link.href);
+    return url.origin === DUIAPI_HOME_URL && (url.pathname === "/" || url.pathname === "");
+  } catch {
+    return false;
   }
+}
 
-  button.dataset.duiapiReturnHomeBound = 'true';
-  button.removeAttribute('target');
-  button.removeAttribute('rel');
-  button.addEventListener('click', (event) => {
-    event.preventDefault();
-    window.location.href = href;
+function normalizeReturnHomeLinks() {
+  document.querySelectorAll("a[href]").forEach((link) => {
+    if (!isReturnHomeLink(link)) {
+      return;
+    }
+
+    link.removeAttribute("target");
+    link.removeAttribute("rel");
   });
 }
 
-bindReturnHomeButton();
-new MutationObserver(bindReturnHomeButton).observe(document.documentElement, {
+document.addEventListener(
+  "click",
+  (event) => {
+    const link = event.target.closest?.("a[href]");
+    if (!isReturnHomeLink(link)) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    window.location.assign(DUIAPI_HOME_URL);
+  },
+  true
+);
+
+normalizeReturnHomeLinks();
+new MutationObserver(normalizeReturnHomeLinks).observe(document.documentElement, {
   childList: true,
   subtree: true,
 });
